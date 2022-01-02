@@ -150,7 +150,7 @@ Types.asset = {
         else
         {
             object = object.trim()
-            if( ! /^[0-9]+\.?[0-9]* [A-Za-z0-9@]+$/.test(object))
+            if( ! /^-?[0-9]+\.?[0-9]* [A-Za-z0-9@]+$/.test(object))
                 throw new Error("Expecting amount like '99.000 SYMBOL', instead got '" + object + "'")
 
             let res = object.split(" ")
